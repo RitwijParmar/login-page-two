@@ -46,6 +46,20 @@ body {
     background-color: #0056b3;
 }
 
+.login-form p a {
+    color: #A9A9A9; 
+    text-align: center;
+    display: block; 
+    margin-top: 10px; 
+    text-decoration: underline; 
+    font-size: 0.9em; 
+}
+
+.login-form p a:hover {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
 .forgot-password {
     color: #007bff;
     text-decoration: none;
