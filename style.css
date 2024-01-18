@@ -65,3 +65,14 @@ body {
     text-decoration: none;
     font-size: 0.9em;
 }
+
+/* Add your styles here */
+.chart-container {
+    width: 80%;
+    margin: auto;
+}
+
+.dropdowns {
+    text-align: center;
+    margin-bottom: 20px;
+}
