@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dropdowns">
+        <select id="location-dropdown" onchange="updateCharts()">
+            <!-- Options will be filled dynamically -->
+        </select>
+        <select id="job-type-dropdown" onchange="updateCharts()">
+            <!-- Options will be filled dynamically -->
+        </select>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="revenueByLocationChart"></canvas>
+        <canvas id="revenueByJobTypeChart"></canvas>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
