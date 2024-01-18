@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const ctx2 = document.getElementById('revenueByJobTypeChart').getContext('2d');
     const revenueByJobTypeChart = new Chart(ctx2, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: ['Service Plumbing', 'Bid Work HVAC'], // Replace with your data
             datasets: [{
@@ -42,6 +42,28 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    const ctx3 = document.getElementById('newChart').getContext('2d');
+    const newChart = new Chart(ctx3, {
+        type: 'line', // For example, a line chart
+        data: {
+            labels: ['January', 'February', 'March'], // Replace with your data
+            datasets: [{
+                label: 'New Chart Dataset',
+                data: [10, 20, 30], // Replace with your data
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });    
 });
 
 function updateCharts() {
