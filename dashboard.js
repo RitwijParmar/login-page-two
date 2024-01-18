@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const ctxServiceCall = document.getElementById('serviceCallBreakdownChart').getContext('2d');
     const serviceCallBreakdownChart = new Chart(ctxServiceCall, {
-        type: 'pie',
+        type: 'line',
         data: {
             labels: ['HVAC', 'Electrical', 'Plumbing', 'Carpentry'],
             datasets: [{
